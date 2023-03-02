@@ -23,6 +23,13 @@ const evenOrOdd = evenOddControl(userNumber, cpuNumber);
 
 console.log(evenOrOdd);
 
+if((evenOdd.toLowerCase() == 'pari') && evenOrOdd){
+    console.log('Hai vinto');
+} else if((evenOdd.toLowerCase() == 'dispari') && !evenOrOdd){
+    console.log('Hai vinto');
+} else {
+    console.log('Hai perso');
+}
 
 
 function randomNumber(){
