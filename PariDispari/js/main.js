@@ -19,7 +19,7 @@ console.log("Il numero scelto dal computer è: " + cpuNumber);
 const addition = userNumber + cpuNumber;
 console.log ('La somma dei numeri scelti è: ' + addition);
 
-const evenOrOdd = evenOddControl((userNumber + cpuNumber));
+const evenOrOdd = evenOddControl(userNumber, cpuNumber);
 
 console.log(evenOrOdd);
 
@@ -31,8 +31,9 @@ function randomNumber(){
 }
 
 
-function evenOddControl(number){
+function evenOddControl(firstNumber, secondNumber){
     let result;
+    let number = firstNumber + secondNumber;
     if(number % 2 == 0){
         result = true;
     } else {
